@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/Beige"
+    android:layout_height="match_parent">
+
+  <Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="@color/card_">
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:src="@drawable/task_bar"
+        android:backgroundTint="@color/card_"/>
+
+  </Toolbar>
+
+  <TextView
+      android:id="@+id/name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Hi, Ashfak "
+      android:textSize="25sp"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+      android:layout_below="@+id/toolbar"
+      android:layout_marginTop="15sp"
+      android:layout_marginLeft="30sp"/>
+
+  <com.google.android.material.card.MaterialCardView
+      android:visibility="visible"
+      android:id="@+id/card1"
+      android:layout_width="300dp"
+      android:layout_height="200dp"
+      android:layout_marginLeft="30dp"
+      android:layout_marginTop="130dp"
+      android:backgroundTint="@color/Light_gray_blue">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/laptop_14960026"
+        android:layout_marginLeft="150dp"/>
+
+    <TextView
+        android:id="@+id/logotext"
+        android:paddingLeft="10px"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/coda"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+  </com.google.android.material.card.MaterialCardView>
+  <com.google.android.material.card.MaterialCardView
+      android:id="@+id/scrolling"
+      android:layout_below="@+id/card1"
+      android:layout_width="300dp"
+      android:backgroundTint="@color/Light_gray_blue"
+      android:layout_marginTop="50dp"
+      android:layout_marginLeft="30dp"
+      android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/scrolltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+  </com.google.android.material.card.MaterialCardView>
+
+  <com.google.android.material.card.MaterialCardView
+      android:visibility="gone"
+      android:id="@+id/coursevideo"
+      android:layout_width="380dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="15dp"
+      android:layout_marginTop="110dp"
+      android:backgroundTint="@color/light_gray_green">
+
+    <Button
+        android:id="@+id/MicroProcessor"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+      android:text="MicroProcessor" />
+
+    <Button
+        android:id="@+id/cpp"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+      android:layout_marginTop="50dp"
+        android:text="C++" />
+
+    <Button
+        android:id="@+id/HTML"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="HTML" />
+    <Button
+        android:id="@+id/css"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="CSS" />
+    <Button
+        android:id="@+id/Js"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="JavaScript" />
+    <Button
+        android:id="@+id/php"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250dp"
+        android:text="PHP" />
+    <Button
+        android:id="@+id/sql"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        android:text="SQL" />
+    <Button
+        android:id="@+id/DSA"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:text="DSA" />
+    <Button
+        android:id="@+id/OOPS"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="OOPs" />
+    <Button
+        android:id="@+id/up"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:text="Microprocessor" />
+  </com.google.android.material.card.MaterialCardView>
+
+  <com.google.android.material.card.MaterialCardView
+      android:visibility="gone"
+      android:id="@+id/coursequiz"
+      android:layout_width="380dp"
+      android:layout_height="550dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginTop="110dp"
+      android:backgroundTint="@color/light_gray_green">
+
+    <Button
+        android:id="@+id/cquiz"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/cppquiz"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="C++" />
+
+    <Button
+        android:id="@+id/HTMLquiz"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="HTML" />
+    <Button
+        android:id="@+id/cssquiz"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="CSS" />
+    <Button
+        android:id="@+id/Jsquiz"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="JavaScript" />
+    <Button
+        android:id="@+id/phpquiz"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250dp"
+        android:text="PHP" />
+    <Button
+        android:id="@+id/sqlquiz"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="300dp"
+        android:text="SQL" />
+    <Button
+        android:id="@+id/DSAquiz"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:text="DSA" />
+    <Button
+        android:id="@+id/OOPSquiz"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:text="OOPs" />
+    <Button
+        android:id="@+id/upquiz"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:text="Microprocessor" />
+  </com.google.android.material.card.MaterialCardView>
+
+  <Toolbar
+      android:layout_width="match_parent"
+      android:layout_height="80dp"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="-8dp"
+      android:background="@color/card_">
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/card_"
+        android:scaleType="centerInside"
+        android:src="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/course"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="@color/card_"
+        android:scaleType="centerInside"
+        android:src="@drawable/online_course" />
+
+    <ImageButton
+        android:id="@+id/quiz"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+      android:src="@drawable/quiz"
+        android:layout_marginLeft="30dp"
+      android:scaleType="centerInside"
+        android:backgroundTint="@color/card_"/>
+
+    <ImageButton
+        android:id="@+id/profile"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="@color/card_"
+        android:layout_marginLeft="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/circle_removebg_preview" />
+
+  </Toolbar>
+</RelativeLayout>

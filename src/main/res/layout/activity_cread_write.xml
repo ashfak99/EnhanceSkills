@@ -1,0 +1,346 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header for the Course Title -->
+    <TextView
+        android:id="@+id/courseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C Programming Course"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- Chapter 1: Introduction -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/courseTitle"
+        android:visibility="visible"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chapter1Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Introduction to C Programming"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/chapter1Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C programming language was developed in 1972 by Dennis Ritchie at Bell Labs. It is a powerful general-purpose language used widely in system programming and embedded systems. C provides low-level access to memory and is often used for developing operating systems, compilers, and drivers."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/nextIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_marginTop="16dp"
+                android:onClick="showVariables" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Chapter 2: Variables -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_variables"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_intro"
+        android:visibility="gone"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chapter2Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Variables in C"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/chapter2Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Variables are containers that hold data values. In C, variables need to be declared with a specific data type before they are used. Common data types include int, float, char, and double. The syntax to declare a variable is: \n\ntype variable_name;\n\nFor example, int age = 25;"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/nextVariables"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_marginTop="16dp"
+                android:onClick="showOperators" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Chapter 3: Operators -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_operators"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_variables"
+        android:visibility="gone"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chapter3Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Operators in C"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/chapter3Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Operators in C are used to perform various operations on variables and constants. Some common operators are:\n\n1. Arithmetic Operators: +, -, *, /, %\n2. Relational Operators: ==, !=, &gt;, &lt;, &gt;=, &lt;=\n3. Logical Operators: &amp;&amp;, ||, !\n4. Assignment Operators: =, +="
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/nextOperators"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_marginTop="16dp"
+                android:onClick="showControlFlow" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Chapter 4: Control Flow -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_controlflow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_operators"
+        android:visibility="gone"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chapter4Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Control Flow in C"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/chapter4Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Control flow statements allow the execution of code in a particular order or pattern. In C, control flow includes:\n\n1. if, if-else, else-if\n2. switch-case\n3. Loops (for, while, do-while)\n\nFor example, an if statement executes a block of code based on whether the condition is true or false."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/nextControlFlow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_marginTop="16dp"
+                android:onClick="showLoops" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Chapter 5: Loops -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_loops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_controlflow"
+        android:visibility="gone"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chapter5Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loops in C"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/chapter5Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loops allow the repeated execution of a block of code. There are three types of loops in C:\n\n1. for loop\n2. while loop\n3. do-while loop\n\nFor example, a for loop runs the code inside it for a predefined number of times."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/nextLoops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_marginTop="16dp"
+                android:onClick="showFunctions" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Chapter 6: Functions -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_functions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_loops"
+        android:visibility="gone"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chapter6Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Functions in C"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/chapter6Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Functions in C allow us to break a program into smaller blocks of code that perform specific tasks. A function is defined as:\n\nreturn_type function_name(parameters) {\n    // code block\n}\n\nFunctions improve modularity and reusability in a program."
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/nextFunctions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_marginTop="16dp"
+                android:onClick="showArrays" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Chapter 7: Arrays -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_arrays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_functions"
+        android:visibility="gone"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chapter7Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrays in C"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/chapter7Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An array is a collection of elements of the same data type, stored in contiguous memory locations. In C, arrays are declared as:\n\ntype array_name[size];\n\nFor example: int numbers[5];"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/nextArrays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_marginTop="16dp"
+                android:onClick="showPointers" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Chapter 8: Pointers -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_pointers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_arrays"
+        android:visibility="gone"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chapter8Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pointers in C"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/chapter8Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pointers in C are variables that store memory addresses of other variables. Pointers are declared as:\n\ntype *pointer_name;\n\nFor example: int *ptr = ;"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

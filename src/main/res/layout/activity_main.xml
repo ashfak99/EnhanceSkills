@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-119dp" />
+
+    <TextView
+        android:id="@+id/dlp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:text="Developed By"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_below="@+id/imageView2">
+
+    </TextView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="10dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/dlp"
+        app:srcCompat="@drawable/untitled_design" />
+
+    <TextView
+        android:id="@+id/dlpname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_below="@+id/dlp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Ashfak Alam">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/azimul_huda_removebg_preview" />
+    <TextView
+        android:id="@+id/dlpname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Azimul Huda"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/dlpname1"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@id/imageView3">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/imageView3"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/faiyaz_removebg_preview" />
+    <TextView
+        android:id="@+id/dlpname3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faiyaz Ahmad"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/dlpname2"
+        android:layout_toRightOf="@id/imageView4"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="20dp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/imageView4"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/farhin_removebg_preview" />
+    <TextView
+        android:id="@+id/dlpname4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Farhin Ashraf"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_toRightOf= "@+id/imageView5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:layout_below="@id/dlpname3">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/imageVew7"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginTop="-120dp"
+        app:srcCompat="@drawable/images_removebg_preview_copy_4" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="207dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="90dp"
+        android:layout_height="107dp"
+        app:srcCompat="@drawable/logo_no_background" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="90dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/imteyaz_gandu" />
+    <TextView
+        android:id="@+id/dlpname5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Imteyaz Ali"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_below="@+id/dlpname4"
+        android:layout_toRightOf="@id/imageView8"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="20dp">
+    </TextView>
+
+
+</RelativeLayout>

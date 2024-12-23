@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="250dp"
+       android:background="@color/layout">
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_width="110dp"
+           android:id="@+id/profilepic"
+           android:layout_height="110dp"
+           android:layout_marginLeft="125dp"
+           android:layout_marginTop="70dp"
+           android:src="@drawable/undraw_male_avatar_g98d">
+       </de.hdodenhof.circleimageview.CircleImageView>
+   </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/namecard"
+        android:layout_marginTop="290dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:hint="Name"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/agecard"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="360dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="280dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/citycard"
+        android:layout_marginTop="430dp"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/NEXT"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:layout_below="@+id/citycard"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="80dp"/>
+</RelativeLayout>

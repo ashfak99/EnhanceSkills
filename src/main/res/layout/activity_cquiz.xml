@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="50dp"
+            android:src="@drawable/bg"
+            android:layout_marginTop="50dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/pale_green"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/Q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/logo"
+            android:text="1. C Language is"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/RG1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Q1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp">
+
+            <RadioButton
+                android:id="@+id/RB1A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="High level Language"/>
+
+
+            <RadioButton
+                android:id="@+id/RB1B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Medium level Language"/>
+
+            <RadioButton
+                android:id="@+id/RB1C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Low level Language"/>
+
+            <RadioButton
+                android:id="@+id/RB1D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="None"/>
+        </RadioGroup>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/pale_green"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/Q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/logo"
+            android:text="2. Which of the following is not variable type?"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/RG2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Q2"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp">
+
+            <RadioButton
+                android:id="@+id/RB2A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Real"/>
+
+
+            <RadioButton
+                android:id="@+id/RB2B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="float"/>
+
+            <RadioButton
+                android:id="@+id/RB2C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="int"/>
+
+            <RadioButton
+                android:id="@+id/RB2D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="char"/>
+        </RadioGroup>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card3"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/pale_green"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/Q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/logo"
+            android:text="3. Which function is often used to output values and print text?"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/RG3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Q1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp">
+
+            <RadioButton
+                android:id="@+id/RB3A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="printword()"/>
+
+
+            <RadioButton
+                android:id="@+id/RB3B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Output()"/>
+
+            <RadioButton
+                android:id="@+id/RB3C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="printf()"/>
+
+            <RadioButton
+                android:id="@+id/RB3D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="scanf()"/>
+        </RadioGroup>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card4"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/pale_green"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/Q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/logo"
+            android:text="4. Which format specifier is often used to print integers?"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/RG4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Q1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp">
+
+            <RadioButton
+                android:id="@+id/RB4A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="%p"/>
+
+
+            <RadioButton
+                android:id="@+id/RB4B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="%d"/>
+
+            <RadioButton
+                android:id="@+id/RB4C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="%s"/>
+
+            <RadioButton
+                android:id="@+id/RB4D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="%f"/>
+        </RadioGroup>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card5"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/pale_green"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/Q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/logo"
+            android:text="5. What do we call the following?        int a[ ] = {25, 50, 75, 100};
+
+"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/RG5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Q1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp">
+
+            <RadioButton
+                android:id="@+id/RB5A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Pointer"/>
+
+
+            <RadioButton
+                android:id="@+id/RB5B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Array"/>
+
+            <RadioButton
+                android:id="@+id/RB5C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Structure"/>
+
+            <RadioButton
+                android:id="@+id/RB5D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="A class"/>
+        </RadioGroup>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card6"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/pale_green"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/Q6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/logo"
+            android:text="6. How do you call a function in C?"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/RG6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Q1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp">
+
+            <RadioButton
+                android:id="@+id/RB6A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="(myfunction);"/>
+
+
+            <RadioButton
+                android:id="@+id/RB6B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="myfunction[];"/>
+
+            <RadioButton
+                android:id="@+id/RB6C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="myfunction;"/>
+
+            <RadioButton
+                android:id="@+id/RB6D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="myfunction();"/>
+        </RadioGroup>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card7"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/pale_green"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/Q7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/logo"
+            android:text="7. Which keyword is used to create a structure?
+
+"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/RG7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Q1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp">
+
+            <RadioButton
+                android:id="@+id/RB7A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="structure"/>
+
+
+            <RadioButton
+                android:id="@+id/RB7B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="structs"/>
+
+            <RadioButton
+                android:id="@+id/RB7C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="struct"/>
+
+            <RadioButton
+                android:id="@+id/RB7D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="str"/>
+        </RadioGroup>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card8"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/pale_green"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/Q8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/logo"
+            android:text="1. What is Q8???"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/RG8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Q1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp">
+
+            <RadioButton
+                android:id="@+id/RB8A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Apple"/>
+
+
+            <RadioButton
+                android:id="@+id/RB8B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Boy"/>
+
+            <RadioButton
+                android:id="@+id/RB8C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Cat"/>
+
+            <RadioButton
+                android:id="@+id/RB8D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Dog"/>
+        </RadioGroup>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card9"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/pale_green"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/Q9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/logo"
+            android:text="1. What is Q9???"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/RG9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Q1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp">
+
+            <RadioButton
+                android:id="@+id/RB9A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Apple"/>
+
+
+            <RadioButton
+                android:id="@+id/RB9B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Boy"/>
+
+            <RadioButton
+                android:id="@+id/RB9C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Cat"/>
+
+            <RadioButton
+                android:id="@+id/RB9D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Dog"/>
+        </RadioGroup>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card10"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/pale_green"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/Q10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/logo"
+            android:text="1. What is Q10???"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/RG10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Q1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp">
+
+            <RadioButton
+                android:id="@+id/RB10A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Apple"/>
+
+
+            <RadioButton
+                android:id="@+id/RB10B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Boy"/>
+
+            <RadioButton
+                android:id="@+id/RB10C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Cat"/>
+
+            <RadioButton
+                android:id="@+id/RB10D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Dog"/>
+        </RadioGroup>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:id="@+id/NEXT"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="400dp"
+        android:layout_marginStart="150dp"/>
+
+</RelativeLayout>
